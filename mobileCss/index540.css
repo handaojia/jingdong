@@ -1,0 +1,535 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  font-size: 100px;
+}
+input {
+  background: none;
+}
+div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+i {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  max-width: 540px;
+  min-width: 320px;
+  font-size: 0.14rem;
+  color: #666;
+  line-height: 1.5;
+  font-family: -apple-system, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  height: 3000px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 打开APP */
+.app {
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+.app .cancel {
+  width: 8%;
+}
+.app .cancel img {
+  width: 0.1rem;
+}
+.app .logo {
+  width: 10%;
+}
+.app .logo img {
+  width: 0.3rem;
+  vertical-align: middle;
+}
+.app > div:nth-child(3) {
+  width: 57%;
+}
+.app > div:nth-child(4) {
+  width: 25%;
+  background-color: #f63515;
+}
+/* banner */
+.banner {
+  position: relative;
+  height: 2rem;
+  width: 100%;
+  background: url(../mobileImg/096924053a9b1358.png!q70.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+/* 轮播图 */
+.banner .slideshow {
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  width: 96%;
+  border-radius: 0.08rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 0.18rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide,
+.swiper-slide a,
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
+.swiper-pagination span {
+  width: 0.04rem !important;
+  height: 0.04rem !important;
+  margin: 0 0.02rem !important;
+}
+.swiper-container {
+  --swiper-theme-color: red;
+}
+/* 搜索 */
+.search-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 540px;
+  height: 0.44rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+.search-wrap-active {
+  position: fixed !important;
+  background-color: red !important;
+  left: 50%;
+  top: 0;
+  max-width: 540px;
+  min-width: 320px;
+  transform: translateX(-50%);
+}
+.search-wrap .btn,
+.search-wrap .login {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.44rem;
+}
+.search-wrap .btn {
+  left: 0;
+  top: 0;
+}
+.search-wrap .btn::before {
+  content: "";
+  display: block;
+  width: 0.2rem;
+  height: 0.18rem;
+  background: url(../mobileImg/fenlei.png) no-repeat;
+  background-size: contain;
+  margin: 0.14rem 0 0 0.15rem;
+}
+.search-wrap .login {
+  right: 0;
+  top: 0;
+  color: #fff;
+  line-height: 0.44rem;
+}
+.search-wrap .search {
+  margin: 0 0.45rem;
+  height: 0.3rem;
+  margin-top: 0.07rem;
+  border-radius: 0.15rem;
+  background-color: #fff;
+}
+.search-wrap .search .logo2 {
+  position: relative;
+  width: 0.2rem;
+  height: 0.15rem;
+  background: url(../mobileImg/logo2.png) no-repeat;
+  background-size: contain;
+  margin: 0.08rem 0.08rem 0.15rem;
+}
+.search-wrap .search .logo2::after {
+  content: "";
+  display: block;
+  width: 0.01rem;
+  height: 0.15rem;
+  background-color: #ccc;
+  position: absolute;
+  left: 0.28rem;
+}
+.search-wrap .search .search-icon {
+  width: 0.18rem;
+  height: 0.15rem;
+  margin: 0.08rem 0.08rem 0 0.08rem;
+  background: url(../mobileImg/jd-sprites.png) no-repeat -0.81rem 0;
+  background-size: 2rem;
+}
+.search-wrap .search input {
+  width: 60%;
+  border: 0;
+  margin-top: 0.08rem;
+  outline: none;
+  color: #232326;
+}
+/* 优惠券 */
+.youHui {
+  width: 100%;
+  height: 1.1rem;
+}
+.youHui > div {
+  width: 33.33%;
+  height: 100%;
+}
+.youHui > div img,
+.youHui > div a {
+  width: 100%;
+  height: 100%;
+}
+/* 导航 */
+.banner .swiper-container {
+  height: 1.5rem;
+}
+.swiper-container2 {
+  margin-top: 0.1rem;
+}
+.nav ul {
+  width: 100%;
+  height: 1.5rem;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+.nav ul li {
+  text-align: center;
+  float: left;
+  list-style: none;
+  width: 20%;
+}
+.nav ul li img {
+  vertical-align: top;
+  width: 0.44rem;
+  height: 0.44rem;
+}
+.nav ul li span {
+  display: block;
+  font-size: 0.12rem;
+}
+/* 秒杀 */
+.seckill {
+  width: 96%;
+  margin: 0 auto;
+  height: 1.4rem;
+  border-radius: 0.05rem;
+  padding: 0.05rem;
+  background-color: #fff;
+}
+.seckill > div {
+  display: flex;
+  width: 100%;
+  height: 0.38rem;
+}
+.seckill .mS {
+  width: 2.1rem;
+  line-height: 0.38rem;
+  overflow: hidden;
+}
+.seckill .mS > span:nth-child(1) {
+  color: black;
+}
+.seckill .mS .time {
+  color: red;
+  margin-left: 0.1rem;
+}
+.seckill .mS .dC {
+  margin-right: 0.1rem;
+  width: 0.22rem;
+  height: 0.2rem;
+  margin-top: 0.09rem;
+  background: url(../mobileImg/seckill-time-to.png);
+  background-size: 0.22rem auto;
+}
+.seckill .mS > span:nth-child(2) span:nth-child(n+3) {
+  color: white;
+  width: 0.18rem;
+  height: 0.2rem;
+  margin-top: 0.09rem;
+  background-color: red;
+  line-height: 0.2rem;
+  text-align: center;
+  border-radius: 0.05rem;
+}
+.seckill .mS .mm {
+  position: relative;
+  margin: 0 0.1rem;
+}
+.seckill .mS .hh {
+  position: relative;
+}
+.seckill .mS .mm::after,
+.seckill .mS .hh::after {
+  content: ":";
+  color: red;
+  font-weight: bold;
+  width: 0.1rem;
+  position: absolute;
+  left: 0.18rem;
+}
+.seckill .more {
+  flex: 1;
+}
+.seckill .more span {
+  line-height: 0.38rem;
+  color: red;
+}
+.seckill .more i {
+  display: inline-block;
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url(../mobileImg/arrow_rt_2ccb8cd5.png);
+  background-size: 0.14rem auto;
+  margin: 0.11rem 0 0 0.05rem;
+}
+.seckill .nav {
+  height: 0.92rem;
+}
+.seckill .nav {
+  width: 100%;
+  height: 0.9rem;
+}
+.seckill .nav .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.seckill .nav .swiper-slide {
+  flex-direction: column;
+  width: 60px;
+  height: 100%;
+}
+.seckill .nav .swiper-slide img {
+  width: 60px;
+  height: 60px;
+}
+.seckill .nav .swiper-slide span:nth-child(2) {
+  color: red;
+  margin-top: 0.05rem;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+}
+.seckill .nav .swiper-slide span:nth-child(3) {
+  color: #d5d5d5;
+  font-size: 14px;
+  line-height: 15px;
+  text-decoration: line-through;
+  font-weight: 100;
+}
+.jdXYP {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96%;
+  margin: 0 auto;
+  height: 2rem;
+  border-radius: 0.05rem;
+  padding: 0.05rem;
+  background-color: #fff;
+  margin-top: 0.1rem;
+}
+.jdXYP div {
+  height: 50%;
+}
+.jdXYP div:nth-child(-n+2) {
+  width: 50%;
+}
+.jdXYP div:nth-child(-n+2) .bS {
+  width: 100%;
+  display: flex;
+}
+.jdXYP div:nth-child(-n+2) .bS div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.jdXYP div:nth-child(n+3) {
+  width: 25%;
+}
+.jdXYP div:nth-child(n+3) div {
+  width: 100%;
+  height: 63%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jdXYP div span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.01rem;
+  display: block;
+}
+.jdXYP div span:nth-child(1) {
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.jdXYP div span:nth-child(2) {
+  font-size: 0.12rem;
+  color: #686868;
+}
+.jdXYP div img {
+  width: 0.5rem;
+}
+.jdXYP span.cl1,
+.jdXYP span.cl,
+.jdXYP span.cl6 {
+  background-color: black;
+}
+.jdXYP span.cl2 {
+  background: linear-gradient(90deg, #3AD1BF, #5AA4FF);
+}
+.jdXYP span.cl3 {
+  background: linear-gradient(90deg, #D400FF, #FF310A);
+}
+.jdXYP span.cl4 {
+  background: linear-gradient(90deg, #FF0000, #FF00A7);
+}
+.jdXYP span.cl5 {
+  background: linear-gradient(90deg, #FF2A00, #FF00AF);
+}
+.baobei {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+  padding: 0.05rem;
+  background-color: #f6f6f6;
+  margin-top: 0.1rem;
+}
+.baobei .han {
+  width: 48%;
+  height: 2.5rem;
+  margin-bottom: 0.1rem;
+  background-color: #ffffff;
+  border-radius: 0.05rem;
+  overflow: hidden;
+}
+.baobei .han img {
+  max-height: 220px;
+  width: 100%;
+}
+.baobei .han p {
+  color: #1a1a1a;
+  padding: 0 0.05rem;
+  font-size: 0.13rem;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.baobei .han p i {
+  vertical-align: middle;
+  display: inline-block;
+  background-size: contain;
+  margin-right: 0.05rem;
+}
+.baobei .han p i.jdgj {
+  background: url(../mobileImg/jdgj.png) no-repeat;
+  width: 0.67rem;
+  height: 0.14rem;
+  background-size: contain;
+}
+.baobei .han p i.jdcs {
+  background: url(../mobileImg/5aadf9daNd4909ddc.png) no-repeat;
+  width: 0.47rem;
+  height: 0.14rem;
+  background-size: contain;
+}
+.baobei .han p i.zy {
+  background: url(../mobileImg/zy.png) no-repeat;
+  width: 0.22rem;
+  height: 0.14rem;
+  background-size: contain;
+}
+.baobei .han p i.jdwl {
+  background: url(../mobileImg/jdwl.png) no-repeat;
+  width: 0.45rem;
+  height: 0.14rem;
+  background-size: contain;
+}
+.baobei .han .price {
+  margin-top: 0.05rem;
+  position: relative;
+  color: red;
+  padding: 0 0.05rem;
+  font-size: 0.16rem;
+}
+.baobei .han .price .sG {
+  border: 1px solid red;
+  border-radius: 0.03rem;
+  padding: 0 0.02rem;
+  margin-left: 0.05rem;
+  font-size: 0.12rem;
+}
+.baobei .han .price a {
+  position: absolute;
+  right: 0;
+  padding: 0.02rem 0.05rem;
+  font-size: 0.12rem;
+  color: #919191;
+  border-radius: 0.2rem 0 0.1rem 0.2rem;
+  background-color: #f3f3f3;
+}
+.baobei .han .VIPPrice {
+  color: #3b3b3b;
+  padding: 0 0.05rem;
+  font-size: 0.13rem;
+}
+.baobei .han .VIPPrice .ico {
+  vertical-align: text-top;
+  display: inline-block;
+  margin-left: 0.02rem;
+  width: 0.3rem;
+  height: 0.11rem;
+  background: url(../mobileImg/logo345.jpg) no-repeat;
+  background-size: contain;
+}
